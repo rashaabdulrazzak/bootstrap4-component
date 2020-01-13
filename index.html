@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+    .carousel-inner img{
+    width:100%;
+    heigth:100%;
+  }
+.panel{
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.panel-default{
+  border-color: #ddd;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    border-bottom: 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.panel a{
+  color:#212529;
+}
+
+</style>
+  <title>bootstrap 4 Component</title>
+</head>
+<body>
+
+<div class="container">
+   <div class="row">
+ <h2>Bootstrap 4 component</h2>
+ <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+   <div class="panel-group" id="accordion">
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">  <h4>Form</h4> </a>
+         </h4>
+       </div>
+       <div id="collapse1" class="panel-collapse collapse in">
+         <div class="panel-body">
+           <form class="was-validated" action="index.html" method="post">
+             <div class="form-group">
+               <label for="">user name</label>
+               <input type="text" name="" class="form-control" value="" required placeholder="enter user name" id="uname" >
+               <div class="valid-feedback">
+                 valid.
+               </div>
+               <div class="invalid-feedback">
+                 plese fill this field
+               </div>
+             </div>
+             <label for="">Email Address</label>
+             <input type="email" name="" class="form-control" value="">
+             <label for="">Password</label>
+             <input type="password" name="" class="form-control" value="">
+             <div class="form-check">
+               <label for="" class="form-check-label">
+                 <input type="checkbox" name="" class="form-check-input" value="">
+                 Remember Me
+               </label>
+             </div>
+             <button type="submit" name="button" class="btn btn-primary">Submit</button>
+           </form>
+
+         </div>
+       </div>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><h4>Cards and card group</h4> </a>
+         </h4>
+       </div>
+       <div id="collapse2" class="panel-collapse collapse">
+         <div class="panel-body">
+           <div class="card">
+             <div class="card-body">
+               basic card
+             </div>
+           </div>
+           <hr>
+           <div class="card bg-primary text-white">
+             <div class="card-body">
+               Primary card
+             </div>
+           </div>
+           <hr>
+           <div class="card">
+             <div class="card-header">
+                header
+             </div>
+             <div class="card-body">
+               <h4 class="card-title"> card title</h4>
+               <p>hi this is body card</p>
+               <a href="#" class="card-link">link1</a>
+             </div>
+             <div class="card-footer">
+                card footer
+             </div>
+           </div>
+           <hr>
+           <div class="card">
+            <img class="card-img-top"src="https://i.picsum.photos/id/556/200/300.jpg" heigth="420" width="100%" alt="imG" >
+             <div class="card-body">
+               <h4 class="card-title"> card title</h4>
+               <p>hi this is body card</p>
+               <a href="#" class="btn btn-primary">see more</a>
+             </div>
+
+           </div>
+           <hr>
+           <div class="card">
+            <img class="card-img-top"src="https://i.picsum.photos/id/556/200/300.jpg" heigth="420" width="100%" alt="imG" >
+             <div class="card-img-overlay">
+               <h4 class="card-title"> card title</h4>
+               <p>hi this is body card</p>
+               <a href="#" class="btn btn-primary">see more</a>
+             </div>
+
+           </div>
+           <hr>
+           <div class="card-columns">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title that wraps to a new line</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="card p-3">
+          <blockquote class="blockquote mb-0 card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card bg-primary text-white text-center p-3">
+          <blockquote class="blockquote mb-0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+            <footer class="blockquote-footer text-white">
+              <small>
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+        </div>
+        <div class="card p-3 text-right">
+          <blockquote class="blockquote mb-0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="card-group">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+         </div>
+       </div>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"> Pagination & breadcrumb</a>
+         </h4>
+       </div>
+       <div id="collapse3" class="panel-collapse collapse">
+         <div class="panel-body">
+           <h3> Pagination</h3>
+           <ul class="pagination justify-content-center my-3">
+             <li class="page-item active"><a href="#" class="page-link">Previous</a></li>
+             <li class="page-item"><a href="#" class="page-link">1</a></li>
+             <li class="page-item "><a href="#" class="page-link">2</a></li>
+             <li class="page-item "><a href="#" class="page-link">3</a></li>
+             <li class="page-item "><a href="#" class="page-link">next</a></li>
+           </ul>
+           <hr>
+           <h3> breadcrumb</h3>
+           <ul class="breadcrumb">
+             <li class="breadcrumb-item"> <a href="#">Home</a></li>
+             <li class="breadcrumb-item"> <a href="#">2020</a></li>
+             <li class="breadcrumb-item"> <a href="#">jan</a></li>
+             <li class="breadcrumb-item"> <a href="#">week 1</a></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">badge * progressbar* spinner</a>
+         </h4>
+       </div>
+       <div id="collapse4" class="panel-collapse collapse">
+         <div class="panel-body">
+           <h1>example Heading <span class="badge badge-secondary">New</span></h1>
+           <span class="badge badge-Primary">New</span>
+           <span class="badge badge-pill badge-secondary">New</span>
+           <button type="button" class="btn btn-primary">
+           Notifications <span class="badge badge-light">4</span>
+         </button>
+         <button type="button" class="btn btn-primary">
+         Profile <span class="badge badge-light">9</span>
+         <span class="sr-only">unread messages</span>
+       </button>
+       <a href="#" class="badge badge-primary">Primary</a>
+       <a href="#" class="badge badge-secondary">Secondary</a>
+       <a href="#" class="badge badge-success">Success</a>
+       <a href="#" class="badge badge-danger">Danger</a>
+       <a href="#" class="badge badge-warning">Warning</a>
+       <a href="#" class="badge badge-info">Info</a>
+       <a href="#" class="badge badge-light">Light</a>
+       <a href="#" class="badge badge-dark">Dark</a>
+       <hr>
+       <div class="progress">
+         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+       </div>
+       <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+       </div>
+       <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+       </div>
+       <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+       </div>
+       <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+       </div>
+       <div class="progress">
+         <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+         <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+         <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+       </div>
+       <hr>
+       <p>Spinner</p>
+       <div class="spinner-border" role="status">
+         <span class="sr-only">Loading...</span>
+       </div>
+       <div class="spinner-border text-primary" role="status">
+         <span class="sr-only">Loading...</span>
+       </div>
+       <div class="spinner-border text-secondary" role="status">
+         <span class="sr-only">Loading...</span>
+       </div>
+       <div class="spinner-border text-success" role="status">
+         <span class="sr-only">Loading...</span>
+       </div>
+       <div class="spinner-border text-danger" role="status">
+         <span class="sr-only">Loading...</span>
+       </div>
+       <div class="spinner-border text-warning" role="status">
+         <span class="sr-only">Loading...</span>
+       </div>
+       <div class="spinner-border text-info" role="status">
+         <span class="sr-only">Loading...</span>
+       </div>
+       <hr>
+       <div class="spinner-grow text-warning" role="status">
+         <span class="sr-only">Loading...</span>
+       </div>
+       <div class="spinner-grow text-dark" role="status">
+         <span class="sr-only">Loading...</span>
+       </div>
+       <div class="spinner-grow text-warning spinner-grow-sm" role="status">
+         <span class="sr-only">Loading...</span>
+       </div>
+       <div class="spinner-grow text-dark  spinner-grow-sm" role="status">
+         <span class="sr-only">Loading...</span>
+       </div>
+       <hr>
+       <button class="btn btn-primary" type="button" disabled>
+         <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+         <span class="sr-only">Loading...</span>
+       </button>
+       <button class="btn btn-primary" type="button" disabled>
+         <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+         Loading...
+       </button>
+         </div>
+       </div>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">alert</a>
+         </h4>
+       </div>
+       <div id="collapse5" class="panel-collapse collapse">
+         <div class="panel-body">
+           <div class="alert alert-primary" role="alert">
+         A simple primary alert—check it out!
+         <a href="#" class="alert-link"> this alert link</a>
+       </div>
+       <div class="alert alert-secondary dismissible" role="alert">
+         <button type="button" name="button" class="close" data-dismiss="alert"> to close alert</button>
+         A simple secondary alert—check it out!
+       </div>
+       <div class="alert alert-success" role="alert">
+         <h4 class="alert-heading">this is alert heading</h4>
+         <strong>this is strong make text inline</strong>
+         A simple success alert—check it out!
+
+       </div>
+       <div class="alert alert-danger" role="alert">
+         A simple danger alert—check it out!
+       </div>
+       <div class="alert alert-warning" role="alert">
+         A simple warning alert—check it out!
+       </div>
+       <div class="alert alert-info" role="alert">
+         A simple info alert—check it out!
+       </div>
+       <div class="alert alert-light" role="alert">
+         A simple light alert—check it out!
+       </div>
+       <div class="alert alert-dark" role="alert">
+         A simple dark alert—check it out!
+       </div>
+         </div>
+       </div>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Typography</a>
+         </h4>
+       </div>
+       <div id="collapse6" class="panel-collapse collapse">
+         <div class="panel-body">
+           <h1> heading</h1>
+           <h2>heading</h2>
+           <h3>heading</h3>
+           <h4>heading</h4>
+           <h5>heading</h5>
+           <h6>heading</h6>
+           <h1 class="display-1"> heading display-1</h1>
+           <h1 class="display-2"> heading display-2</h1>
+           <h1 class="display-3"> heading display-3</h1>
+           <h1 class="display-4"> heading display-4</h1>
+           <p class="font-weight-bold"> font-weight-bold </p>
+           <p class="font-weight-bolder"> font-weight-bolder </p>
+           <p class="font-weight-normal"> font-weight-normal </p>
+           <p class="font-weight-light"> font-weight-light </p>
+           <p class="font-weight-lighter"> font-weight-lighter </p>
+           <p class="font-italic"> font-italic </p>
+           <p class="font-weight-bold"> font-weight-bold </p>
+           <p class="text-left">text-left</p>
+           <p class="text-right">text-right</p>
+           <p class="text-center">text-center</p>
+           <p class="text-justify">text-justify</p>
+           <p class="text-left">text-left</p>
+           <p class="text-lowercase">text-lowercase</p>
+           <p class="text-upperlowercase">text-uppercase</p>
+           <p class="text-capitalize">text-capitalize</p>
+         </div>
+       </div>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Table</a>
+         </h4>
+       </div>
+       <div id="collapse7" class="panel-collapse collapse">
+         <div class="panel-body">
+           <p> table make it style like bootstrap table with responsive <br>
+              table-striped make each row with different color for odd row and even row <br>
+             table-bordered give border to each cell <br>
+             table-hover : when hover over row give different ackground
+             table-dark : give it black color <br>
+             we can give each row different color by giving color class inside each row
+            </p>
+           <table class="table table-striped table-bordered table-dark">
+             <thead>
+               <tr>
+                 <th>first name</th>
+                 <th>last name</th>
+                 <th>email</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>rasha</td>
+                 <td>abdo</td>
+                 <td>rasha@gmail.com </td>
+               </tr>
+               <tr>
+                 <td>rasha</td>
+                 <td>abdo</td>
+                 <td>rasha@gmail.com </td>
+               </tr>
+               <tr>
+                 <td>rasha</td>
+                 <td>abdo</td>
+                 <td>rasha@gmail.com </td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+       </div>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Scrollspy</a>
+         </h4>
+       </div>
+       <div id="collapse8" class="panel-collapse collapse">
+         <div class="panel-body">
+           <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+             <ul class="navbar-nav">
+               <li class="nav-item"> <a href="#section1" class="nav-link"> section1</a></li>
+                 <li class="nav-item"> <a href="#section2" class="nav-link"> section2</a></li>
+                 <li class="nav-item"> <a href="#section3" class="nav-link"> section3</a></li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> section4</a>
+                   <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#section41"> link1</a>
+                     <a class="dropdown-item" href="#section42"> link2</a>
+                   </div>
+                 </li>
+
+             </ul>
+           </nav>
+           <div class="container-fluid bg-success pt-5" id="section1">
+             <h1>section 1</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           </div>
+           <div class="container-fluid bg-info pt-5" id="section2">
+                <h1>section 2</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           </div>
+           <div class="container-fluid bg-primary pt-5" id="section3">
+                <h1>section 3</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           </div>
+
+           <div class="container-fluid bg-danger pt-5" id="section41">
+                <h1>section 4-1 </h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           </div>
+           <div class="container-fluid bg-dark pt-5" id="section42">
+                <h1>section 4-2</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Navigation</a>
+         </h4>
+       </div>
+       <div id="collapse9" class="panel-collapse collapse">
+         <div class="panel-body">
+           <h4> navigation  </h4>
+           <p> navbar-dark get color white and navbar-light give black <br>
+            navbar-expand-lg : define the vertical line default is horizontal
+            bg-dark backgroung of navigation <br>
+            class form-inline to make the input and button on the same line
+            </p>
+            <div class="container mt-3">
+             <h4> nav bar </h4>
+             <ul class="nav nav-tabs nav-justified">
+               <li class="nav-item"> <a href="#" class="nav-link"> link1</a></li>
+                 <li class="nav-item"> <a href="#" class="nav-link"> link2</a></li>
+                 <li class="nav-item"> <a href="#" class="nav-link"> link3</a></li>
+                 <li class="nav-item"> <a href="#" class="nav-link"> link4</a></li>
+             </ul>
+            </div>
+           <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+             <ul class="navbar-nav">
+               <li class="nav-item"> <a href="#" class="nav-link"> link1</a></li>
+                 <li class="nav-item"> <a href="#" class="nav-link"> link2</a></li>
+                 <li class="nav-item"> <a href="#" class="nav-link"> link3</a></li>
+                 <li class="nav-item"> <a href="#" class="nav-link"> link4</a></li>
+                 <form class="form-inline" action="index.html" method="post">
+                   <input class="form-control mr-sm-1" type="text" name="" value="" placeholder="Search">
+                   <button type="submit" name="button" class="btn btn-success">Search</button>
+                 </form>
+             </ul>
+           </nav>
+         </div>
+       </div>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Modal</a>
+         </h4>
+       </div>
+       <div id="collapse10" class="panel-collapse collapse">
+         <div class="panel-body">
+           <p> need three div 1. modal 2. modal-dialog 3. modal-content</p>
+           <p> modal content contains 3 divs 1. modal-header 2. model-body 3. modal-footer</p>
+           <!-- Button trigger modal -->
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+          Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-center" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         </div>
+       </div>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">dropdown</a>
+         </h4>
+       </div>
+       <div id="collapse11" class="panel-collapse collapse">
+         <div class="panel-body">
+           <div class="dropdown">
+             <button type="button" name="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> drop drown</button>
+             <div class="dropdown-menu">
+               <h5 class="dropdown-header">My Header 1</h5>
+               <a href="#" class="dropdown-item">link1</a>
+               <a href="#" class="dropdown-item-text"> to get item as text</a>
+               <a href="#" class="dropdown-item">link3</a>
+               <div class="dropdown-divider">
+
+               </div>
+               <h5 class="dropdown-header">My Header 2</h5>
+               <a href="#" class="dropdown-item active"> activelink1</a>
+               <span class="dropdown-item-text"> add text hello</span>
+               <a href="#" class="dropdown-item disabled"> disabled link2</a>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">collapse</a>
+         </h4>
+       </div>
+       <div id="collapse12" class="panel-collapse collapse">
+         <div class="panel-body">
+           <div class="container mt-3">
+             <button type="button" name="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">collabsible button </button>
+             <p id="demo" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           </div>
+           <h4>collapse first show then hide</h4>
+           <div class="container mt-3">
+             <button type="button" name="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">collabsible button </button>
+             <p id="demo1" class="collapse show">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">Carousel</a>
+         </h4>
+       </div>
+       <div id="collapse13" class="panel-collapse collapse">
+         <div class="panel-body">
+           <h4>Carousel</h4>
+           <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="1500">
+           <!-- indicator -->
+           <ol class="carousel-indicators">
+             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+           </ol>
+           <!-- the slide show -->
+           <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img src="https://i.picsum.photos/id/1060/1110/500.jpg" class="d-block w-100" alt="...">
+             </div>
+             <div class="carousel-item">
+               <img src="https://i.picsum.photos/id/1035/1110/500.jpg" class="d-block w-100" alt="...">
+               <div class="carousel-caption d-none d-md-block">
+                 <h5>Second slide label</h5>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img src="https://i.picsum.photos/id/269/1110/500.jpg" class="d-block w-100" alt="...">
+               <div class="carousel-caption d-none d-md-block">
+                 <h5>Third slide label</h5>
+                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+               </div>
+             </div>
+           </div>
+           <!-- left and right control -->
+           <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+           </a>
+           <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+           </a>
+         </div>
+         </div>
+       </div>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h4 class="panel-title">
+           <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">BUTTON - BTN GROUP - BTN TAG - DIFFERENT STYLE BUTTON</a>
+         </h4>
+       </div>
+       <div id="collapse14" class="panel-collapse collapse">
+         <div class="panel-body">
+             <div class="col-12">
+               <h3 class="pt-5 pb-3">button</h3>
+               <button type="button" name="button"> button </button>
+               <button type="button" class="btn" name="button"> button class btn </button>
+               <button type="button" class="btn btn-primary">Primary</button>
+               <button type="button" class="btn btn-secondary">Secondary</button>
+               <button type="button" class="btn btn-success">Success</button>
+               <button type="button" class="btn btn-danger">Danger</button>
+               <button type="button" class="btn btn-warning">Warning</button>
+               <button type="button" class="btn btn-info">Info</button>
+               <button type="button" class="btn btn-light">Light</button>
+               <button type="button" class="btn btn-dark">Dark</button>
+               <button type="button" class="btn btn-link">Link</button>
+             </div>
+             <div class="col-12 pt-5">
+             <button type="button" class="btn btn-info btn-block">Info block full width</button>
+             </div>
+             <div class="col-12 pt-5">
+                 <button type="button" class="btn btn-info active">Info active</button>
+                 <button type="button" class="btn btn-info" disabled>Info</button>
+               </div>
+             <div class="col-12 pt-3">
+               <h4>Button tags</h4>
+               <a class="btn btn-primary" href="#" role="button">Link</a>
+               <button class="btn btn-primary" type="submit">Button</button>
+               <input class="btn btn-primary" type="button" value="Input">
+               <input class="btn btn-primary" type="submit" value="Submit">
+               <input class="btn btn-primary" type="reset" value="Reset">
+             </div>
+             <div class="col-12 pt-3">
+               <h4>Outline buttons</h4>
+               <button type="button" class="btn btn-outline-primary">Primary</button>
+               <button type="button" class="btn btn-outline-secondary">Secondary</button>
+               <button type="button" class="btn btn-outline-success">Success</button>
+               <button type="button" class="btn btn-outline-danger">Danger</button>
+               <button type="button" class="btn btn-outline-warning">Warning</button>
+               <button type="button" class="btn btn-outline-info">Info</button>
+               <button type="button" class="btn btn-outline-light">Light</button>
+               <button type="button" class="btn btn-outline-dark">Dark</button>
+             </div>
+             <div class="col-12 pt-3">
+               <h4>Sizes</h4>
+               <button type="button" class="btn btn-primary btn-lg">Large button</button>
+               <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+               <button type="button" class="btn btn-primary btn-sm">Small button</button>
+               <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+             </div>
+             <div class="col-12 pt-3">
+               <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+               <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+             </div>
+             <div class="col-12 pt-3">
+                 <h4>Active state</h4>
+                 <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+                 <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+             </div>
+             <div class="col-12 pt-3">
+                 <h4 class="mb-3">Disabled state</h4>
+                 <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+                 <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+                 <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+                 <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+             </div>
+             <div class="col-12 pt-3">
+               <h4>Checkbox and radio buttons</h4>
+               <div class="btn-group-toggle" data-toggle="buttons">
+               <label class="btn btn-secondary active">
+                 <input type="checkbox" checked> Checked
+               </label>
+              </div>
+             </div>
+           <div class="col-12 pt-3">
+             <h4>button group toggle</h4>
+             <div class="btn-group btn-group-toggle" data-toggle="buttons">
+             <label class="btn btn-secondary active">
+               <input type="radio" name="options" id="option1" checked> Active
+             </label>
+             <label class="btn btn-secondary">
+               <input type="radio" name="options" id="option2"> Radio
+             </label>
+             <label class="btn btn-secondary">
+               <input type="radio" name="options" id="option3"> Radio
+             </label>
+            </div>
+           </div>
+           <div class="col-12 pt-3">
+               <h4>button group</h4>
+               <div class="btn-group">
+                 <button type="button" name="button" class="btn btn-secondary">button</button>
+                 <button type="button" name="button" class="btn btn-secondary">button</button>
+                 <button type="button" name="button" class="btn btn-secondary">button</button>
+               </div>
+               <div class="btn-group btn-group-lg">
+                 <button type="button" name="button" class="btn btn-secondary">button</button>
+                 <button type="button" name="button" class="btn btn-secondary">button</button>
+                 <button type="button" name="button" class="btn btn-secondary">button</button>
+               </div>
+               <div class="btn-group btn-group-vertical">
+                 <button type="button" name="button" class="btn btn-secondary">button</button>
+                 <button type="button" name="button" class="btn btn-secondary">button</button>
+                 <button type="button" name="button" class="btn btn-secondary">button</button>
+               </div>
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+</div>
+</div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
